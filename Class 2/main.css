@@ -4,17 +4,20 @@ body {
 
 h1 {
 font-family: Arial, Helvetica, sans-serif;
-font-size: 48px;
 }
 
 h2 {
-font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+.summer-autumn {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
-h3 {
-    font-size: 28px;
-}
-h4 {
-    font-size: 24px;
+.winter {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
 }
 
 p {
@@ -22,32 +25,40 @@ p {
         text-align: justify;
         margin: 50px auto;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px; 
+        display: inline-block;
 }
 
 .container {
-    background-color:lightgray;
+    background-color: lavenderblush;
     width: 100%;
     min-height: 300px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+
 }
 
 nav.navbar {
-    background-color: slategray;
+    background-color: lightgreen;
     width:100%;
     padding:10px 0px;
 }
 
 nav.navbar ul {
     list-style: inline-block;
-    list-style: none;
+    list-style-type: none;
     padding-left: 0px;
     margin: 0px;
     text-align: center;
 }
-nav.navbar li{
-border-bottom: 2px solid grey;
 
-}
+nav.navbar li{
+    border-bottom: 1px solid gray;
+    
+    }
+
+
+
 nav.navbar li:last-child {
     border-bottom: none; 
 }
@@ -55,7 +66,7 @@ nav.navbar a {
     font-size: 22px;
     line-height: 36px;
     text-decoration: none;
-    color:whitesmoke;
+    color:black;
 }
 .img-container {
     width: 500px;
@@ -65,32 +76,35 @@ nav.navbar a {
   .img-container img {
     width: 100%;
   }
+  
   img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 6px;
   }
 
-}
+  li {
+      list-style-type: none;
+      font-family: Arial, Helvetica, sans-serif;
+  }
 
-@media(min-width: 750px) {
+  .autumn-list {
+      text-align: left;
+    
+  }
+
+@media(min-width: 768px){
     .container {
-        background-color:lightgoldenrodyellow;
-        width: 750px;
-        margin: 0px auto;
+        background-color: lightblue;
+
     }
 
-nav.navbar li {
-    display: inline-block;
-    display:none;
 }
 
-}
 @media(min-width: 992px){
-    container {
+    .container {
         width: 960px;
-        background-color:lightgreen;
+        background-color: lightyellow;
     }
 }
-
-
