@@ -1,0 +1,83 @@
+.container {
+    background-color: whitesmoke;
+}
+
+.pink {
+    background-color:pink;
+}
+
+.white {
+    background-color: white;
+
+}
+
+.nav {
+    background-color:lightgoldenrodyellow;
+    width:100%;
+    padding:30px;
+}
+
+li {
+    display:inline-block;
+}
+ul {
+    list-style: none;
+}
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 48px;
+    text-align: center;
+    
+
+}
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36px;
+    text-align: center;
+   
+}
+/* VERTICLE HORIZONTAL ALIGN*/
+p {
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    vertical-align: middle;    
+    margin-block-start: 9em;
+    margin-block-end: 9em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    position: relative;
+    top: 50%;
+
+
+
+}
+.responsive  {
+    width: 100%;
+    height: auto;
+}
+/* VERTICLE HORIZONTAL ALIGN*/
+.center {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    width: 50%;
+    top: 50%;
+    left: 50%;   
+}
+
+.floater-section {
+    float: left;
+    width: 100%;
+    min-height: 300px;
+    margin-bottom: 20px;
+}
+
+.clearfix {
+    clear: both;
+}
