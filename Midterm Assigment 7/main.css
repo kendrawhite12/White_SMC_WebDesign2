@@ -1,0 +1,288 @@
+/* FLOATERS */
+.container {
+    background-color:#EDF0F1;
+    width: 100%;
+}
+
+.orange {
+    background-color:#F17625;
+}
+.blue {
+    background-color: #44B8EA;
+}
+.navy {
+    background-color: #0D1D41;
+}
+
+.white {
+    background-color:whitesmoke;
+}
+.black {
+    background-color: #3A3B3D;
+    width: 100%;
+}
+.grey {
+    background-color:#EDF0F1;
+}
+.banner {
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
+/* HERO STUFF*/
+
+.hero-image {
+    background-image: url("banner.jpg");
+    height: 100%;
+    background-position: middle;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .hero-text button {
+      margin-top: 100px;
+    padding: 35px;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 25px 25px;
+    color: black;
+    background-color: #F17625;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  
+  .link-style {
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(40, 40, 40);
+    background-color: #F17625;
+  }
+
+  .hero-text button:hover {
+    vertical-align: middle;
+    background-color: #555;
+    color: white;
+  }
+.nav {
+    background-color:#F17625;
+    width:100%;
+   
+    margin-right: 50px;
+}
+.img {
+    width: 50%;
+}
+.img-container {
+    width: 300px;
+    margin: auto;
+ }
+ .left {
+     float: left;
+ }
+ .centerhours {
+     text-align: center;
+ }
+ p {
+    
+    font-size: 2 vw;
+    font-family: 'Spicy Rice', cursive;
+     color: #3A3B3D;
+     text-align: center; 
+     width: 50%;
+ }
+ 
+ /*TESTING*/
+
+
+li {
+    margin-right: 35px;
+    text-align: left;
+    font-size: 2vw;
+    display:inline-block;
+}
+ul {
+    font-family: 'Bowlby One', cursive;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2vw;
+    color: white;
+    list-style: none;
+
+}
+
+.floater-section {
+    float: left;
+    width: 100%;
+    min-height: 300px;
+    margin-bottom: 20px;
+}
+.responsive  {
+    width: 100%;
+    height: auto;
+}
+.width {
+    
+    width:100%;
+    height: 100%;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+.center {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    width: 50%;
+    top: 50%;
+    left: 50%;   
+}
+.center-align {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    width: 50%;
+    top: 50%;
+    left: 50%;  
+
+}
+.menu {
+    width: 45px;
+    height: 10px;
+    background-color: black;
+    margin: 6px 0;
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+p {
+    font-family: 'Bowlby One', cursive;
+    text-align: left;
+    float: left;
+    font-size: 2vw;
+}
+h2 {
+    font-family: 'Bowlby One', cursive;
+    text-align: center;
+    font-size: 5vw;
+    color: #36395B;
+    margin-top: 0px;
+
+}
+h3 {
+    font-family: 'Bowlby One', cursive;
+    font-size: 6vw;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #3A3B3D;
+    text-align: center;
+    
+}
+h4 {
+    font-family: 'Bowlby One', cursive;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2vw;
+ 
+}
+h5 { 
+    font-family: 'Bowlby One', cursive;
+    color: #3A3B3D;
+    position: relative;
+    text-align: center;
+    float:right;
+    font-size: 4vw;
+}
+h6 {
+    font-family: 'Bowlby One', cursive;
+    color: #3A3B3D;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2.5vw;
+}
+
+}
+
+/*************SMALL SCREENS********************/
+@media (min-width: 450px){
+    .small-width-25 {
+        width: 25%;
+    }
+    
+    .small-width-33 {
+        width: 33.3333%;
+    }
+    
+    .small-width-50 {
+        width: 50%;
+    }
+
+    .small-width-100 {
+        width: 100%;
+    }
+}
+
+/*************MEDIUM SCREENS*******************/
+@media (min-width: 768px){
+    .med-width-25 {
+        width: 25%;
+    }
+    
+    .med-width-33 {
+        width: 33.3333%;
+    }
+
+    .med-width-50 {
+        width: 50%;
+    }
+
+    .med-width-100 {
+        width: 100%;
+    }
+}
+
+/*************LARGE SCREENS*******************/
+@media (min-width: 992px){
+    .large-width-25 {
+        width: 25%;
+    }
+    
+    .large-width-33 {
+        width: 33.33333%;
+    }
+
+    .large-width-50 {
+        width: 50%;
+    }
+
+    .large-width-100 {
+        width: 100%;
+    }
+}
