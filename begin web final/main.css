@@ -7,7 +7,7 @@
     left: 0;
     background-color: #791a17;
     font-family:'Inconsolata', monospace;
-    text-decoration: #f1f1f1;
+    color: #f1f1f1;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -15,15 +15,14 @@
   
   .sidebar a {
     padding: 10px 10px 10px 10px;
-    text-decoration:#e5bb2f;
     font-size: 20px;
-    color: black;
-    display: inline-block;
+    color: #f1f1f1;
+    display: block;
     transition: 0.3s;
   }
   
   .sidebar a:hover {
-   text-decoration:#e5bb2f;
+  color:#e5bb2f;
    font-family:'Inconsolata', monospace;
     
   }
@@ -68,18 +67,23 @@
     margin-right: auto;
   }
   
-  
 @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
 }
   
-
 h1 {
     font-family: 'Inconsolata', monospace;
     font-size: 36px; 
-    text-align: center
+    text-align: center;
 }
+
+h2 {
+  font-family: 'Inconsolata', monospace;
+  font-size: 30px; 
+  text-align: center;
+}
+
 
 p {
     font-family: 'Inconsolata', monospace;
@@ -119,7 +123,6 @@ padding-top:0;
     background-color: #f1f1f1;
     width: 100%;
     height: 1000;
-
 }
 .banner {
   width: 100vw;
@@ -147,7 +150,7 @@ padding-top:0;
 .textparagraph{
   width: 85%;
   font-size: 3vw;
-  text-align: center;
+  text-align: justify;
   margin-left: auto;
   margin-right: auto;
   vertical-align: middle;
@@ -222,6 +225,92 @@ height: 185px;
 .responsive {
   width: 100%;
   height: auto;
+}
+
+.formcontainer {
+  width:100%;
+  height: 200px;
+  margin: auto;
+  background-color:#791a17;
+  color: #f1f1f1;
+  position: relative;
+  top: 200px;
+  padding: 30px;
+}
+.container {
+  max-width: 400;
+  margin: auto;
+}
+
+.flex-container {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  margin-top: 75px;
+  display: flex;
+  display: block;
+  align-content: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  background-color:#E5BB2F;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 50px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  display: inline;
+}
+.margin {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#poster1 {
+  align-content: top;
+  width: 400px;
+}
+
+#poster3 {
+  align-content: top;
+  width: 450px;
+}
+#poster2 {
+  align-content:top;
+  width: 400px;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+
+  
+
+
 
  
 .menu-btn div {
@@ -254,52 +343,10 @@ height: 185px;
  display: block !important; 
 }
   
-  
   body {
     font-family: 'Inconsolata', monospace;
   }
-  
-  .sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-  
-  }
-  
-  .sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: #f1f1f1;
-    font-size: 22px;
-    color: black;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidebar a:hover {
-    color: #791A17;;
-  }
-  
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  .openbtn {
-    font-size: 22px;
-    cursor: pointer;
-    background-color: #791A17;;
-    color:  #f1f1f1;
-    border: none;
-  }
+
 .centeredsocials {
   display: block;
   text-align: center;
@@ -309,6 +356,7 @@ height: 185px;
   width: 50%;
   top: 50%;
   left: 50%;   
+
 }
 .centeredbuttons {
   display: block;
@@ -321,14 +369,13 @@ height: 185px;
   left: 50%;  
 }
   
-  .openbtn:hover {
-    background-color: 
-  }
-  
   #main {
+    margin-top: 6px;
     transition: margin-left .5s;
-    padding: 16px;
+    padding: 5px;
   }
+
+
 
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
