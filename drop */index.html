@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+h2
+ {font-family: 'Inconsolata', monospace;
+ font-size: 22px;
+}
+
+.dropbtn {
+  background-color: #F3E6E3;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Inconsolata', monospace;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #B2B2B2;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Inconsolata', monospace;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+
+
+
+</head>
+<body>
+
+<h2>Here is a dropdown menu of my favorite flowers. <br>
+    <br>
+   <strong><h2>Pick your favorite flower.</h2></strong> 
+
+
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Flowers</button>
+  <div id="myDropdown" class="dropdown-content">
+
+
+    <a id="gardenias" href="#gardenias" >Gardenias</a></option>
+    <a id="hydrangeas" href="#hydrangeas">Hydrangeas</a></option>
+    <a id="lilies" href="#lilies">Lilies</a></option>
+    <a id="daisies" href="#daisies">Daisies</a></option>
+    <a id="freesias" href="#freesias"> Freesias</a></option>
+
+  </div>
+</div>
+<script>
+    var opt1 = document.getElementById("gardenias");
+    opt1.addEventListener("click", function (){showOutput("Family‎: ‎Rubiaceae <br> Scientific name: Gardenia jasminoides") });
+
+    var opt2 = document.getElementById("hydrangeas");
+    opt2.addEventListener("click", function (){showOutput("Family: Hydrangeaceae <br> Scientific name: Hydrangea") });
+
+     var opt3 = document.getElementById("lilies");
+    opt3.addEventListener("click", function (){showOutput("Family: Liliaceae <br> Scientific name: Lilium") });
+
+    var opt4 = document.getElementById("daisies");
+    opt4.addEventListener("click", function (){showOutput("Family: Asteraceae <br> Scientific name: Bellis perennis") });
+
+      var opt5 = document.getElementById("freesia");
+    opt5.addEventListener("click", function (){showOutput("Family: Iridaceae <br> Scientific name: Freesia") });
+
+
+    function showOutput(text) {
+    var fnc = document.getElementById("buttonOutput")
+
+        fnc.innerHTML=text;
+  }
+  </script>
+
+  <p id="buttonOutput"></p>
+  
+
+
+  
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
+
