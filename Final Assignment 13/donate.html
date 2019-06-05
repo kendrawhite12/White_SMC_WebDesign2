@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="UTF-8">
+        <title>Donate</title>
+        <meta name="veiwport" content="width=device-width, initial-scale=1"/>
+    
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">  
+        <link rel="stylesheet" href="main.js">
+    </head>  
+       
+            <script>
+                    function openNav() {
+                  document.getElementById("mySidebar").style.width = "250px";
+                  document.getElementById("main").style.marginLeft = "250px";
+                }
+                
+                /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+                function closeNav() {
+                  document.getElementById("mySidebar").style.width = "0";
+                  document.getElementById("main").style.marginRight = "0";
+                  var changedText = document.getElementById('changed');
+                  
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+</script>
+
+<img src="LAMetLogo.png" alt="newlogo" id="logo"></div>
+        
+<body>
+        
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Blog</a>
+            <a href="donate.html">Donate</a>
+            <a href="ticket.html">Tickets</a>
+            <a href="performances.html">Performances</a>
+      
+        </div>
+      
+        <div id="main">
+              <button class="openbtn" onclick="openNav()">☰</button>  
+          </div>
+        
+          <div id="main">
+        
+                  <div class="mobile-nav">
+                    
+                          
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                          </div>
+                      
+        
+                  
+
+
+
+                
+         <strong><h1>Donate</h1></strong> 
+        </div>
+        <br>
+                 
+                 
+                 <div class="margin"></div>
+
+                 <h2>How much would you like to donate?</h2>
+                </div>
+            </div>
+           <br>
+           <br>
+           <br>
+
+
+               <div class="center">
+            <button onclick="myFunction()" class="dropbtn"><strong> 50 </strong></button>
+           
+            <button onclick="myFunction()" class="dropbtn"><strong> 100 </strong></button>
+            
+            <button onclick="myFunction()" class="dropbtn"><strong> 200 </strong></button>
+            
+            <button onclick="myFunction()" class="dropbtn"><strong> 500 </strong></button>
+
+            <button onclick="myFunction()" class="dropbtn"><strong> 700 </strong></button>
+            
+            <button onclick="myFunction()" class="dropbtn"><strong> 1000 </strong></button>
+
+                <div class="margin">
+                
+       
+   
+        
+  
+          <br>
+          <br>
+          <br>
+          <br> 
+
+
+       
+            
+    
+    
+             
+        
+          </div>
+
+          <div class="center">
+                <div class="margin">
+
+            <button onclick="displayMessage()">Submit</button>
+        
+            <input type="button" value="Click" onClick="alert('Thank you for your donation!');">
+        </div>
+
+<br>
+
+<script>
+	function displayMessage(){
+		alert("Thank you for your donation");
+	}		
+</script>
+    
+ 
+</body>
+</html>
